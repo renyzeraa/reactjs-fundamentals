@@ -1,3 +1,4 @@
+import { Counter } from "./counter"
 import { RepositoryItem } from "./repository-item"
 
 const itens = [
@@ -25,6 +26,8 @@ export function RepositoryList() {
       <ul>
         {itens.map(({description, link, name}) => <RepositoryItem description={description} name={name} link={link}/>)}
       </ul>
+
+      <Counter/>
     </section>
   )
 }
