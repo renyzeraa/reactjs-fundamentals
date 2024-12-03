@@ -22,12 +22,13 @@ module.exports = {
         use: 'babel-loader'
       },
       {
-        test: /\.css?$/,
+        test: /\.scss?$/,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
+          'sass-loader',
         ],
-      },
+      }
     ]
   },
   plugins: [
