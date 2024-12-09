@@ -3,20 +3,36 @@
 
   h1 {
     margin-bottom: 16px;
+    text-align: center;
+    font-size: 32px;
   }
 
   ul {
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 12px;
 
     li {
-      & + li {
-        margin-top: 20px;
+      padding: 12px;
+      background-color: #353535;
+      border-radius: 8px;
+      transition: transform 0.4s;
+
+      &:hover {
+        transform: scale(0.95);
       }
+
+      strong {
+        color: #eff;
+      }
+
       p {
         font-size: 14px;
-        color: #444;
+        color: #aaa;
         margin-top: 8px;
       }
+
       a {
         display: inline-block;
         margin-top: 16px;
